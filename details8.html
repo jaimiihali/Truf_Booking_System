@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turf Booking System</title>
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+  <div class="turf-container">
+    <div class="turf-header">
+      <h1 id="turfName">Impact-absorbing turf</h1>
+      <p id="turfLocation">Location:Goripalayam</p>
+    </div>
+
+    <div class="turf-details">
+      <div class="availability">
+        <h3>Availability:</h3>
+        <p id="availabilityTimes">9 AM - 10 PM</p>
+      </div>
+      
+      <div class="capacity">
+        <h3>Capacity:</h3>
+        <p id="turfCapacity">20 People</p>
+      </div>
+
+      <div class="booking-form">
+        <h3>Book Now:</h3>
+        <form id="bookingForm">
+          <label for="date">Select Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="time">Select Time:</label>
+          <input type="time" id="time" name="time" required>
+
+          <label for="people">Number of People:</label>
+          <input type="number" id="people" name="people" min="1" max="20" required>
+
+          <button type="submit">Check Availability</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="turf-message">
+      <p id="bookingMessage"></p>
+    </div>
+  </div>
+
+  <script src="details.js"></script>
+</body>
+</html>
